@@ -1,0 +1,290 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+.primary-color2 {
+    color: steelblue;
+}
+
+.primary-color {
+    color: lightblue;
+}
+
+.bg-primary {
+    background: lightblue;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.1em;
+    color: white;
+    background: #333;
+    padding: 1.1em 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: lightblue;
+    color: #333;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.py-2 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+/* utility classes */
+.clr {
+    clear: both;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.clr {
+    clear: both;
+}
+
+.text-primary {
+    color: lightblue;
+}
+
+/* Main styling */
+a {
+    color: #333;
+}
+
+p {
+    margin: 10px;
+}
+
+/* Navbar*/
+#navbar a {
+    color: white;
+}
+
+#navbar {
+    background: #333;
+    color: white;
+    overflow: auto;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    color: lightblue;
+    background: #444;
+}
+
+/*Showcase */
+#showcase {
+    background: url("https://images.unsplash.com/photo-1587918899471-ab5a546c54a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content {
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2rem;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7rem;
+    font-size: 1.2em;
+}
+
+/* home info */
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 30%;
+    background: url("https://images.unsplash.com/photo-1577387964004-597c17f5cc55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80") no-repeat;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    padding: 70px;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+/* features */
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 90px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+/* footer */
+#main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444444;
+}
+
+/* about */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+    margin-top: 20px;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+    color: black;
+}
+
+#about-info .info-right img {
+    display: block;
+    width: 70%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* testimonials */
+#testimonials {
+    height: 600px;
+    background: url("https://images.unsplash.com/photo-1426869884541-df7117556757?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center/cover;
+    padding-top: 100px;
+    margin-top: 500px;
+    color: white;
+}
+
+#testimonials h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3em;
+}
+
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    opacity: 0.9;
+    color: black;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* contact form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: lightblue;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Cukrárna Na rohu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html">Cukrárna Na rohu</a></div>
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="about.html">O nás</a></li>
+                <li><a class="current" href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="contact-form" class="py-3">
+    <div class="container">
+        <h2 class="l-heading"><span class="primary-color">Napište</span> nám</h2>
+        <p>Prosíme o vyplnění níže uvedeného formuláře.</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Jméno</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Zpráva</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn">ODESLAT</button>
+        </form>
+
+    </div>
+</section>
+
+<section id="contact-info">
+    <div class="box">
+        <i class="fas fa-hotel fa-3x"></i>
+        <h3>ADRESA</h3>
+        <p>Jantarová 3344/4</p>
+        <p>702 00, Ostrava 2</p>
+    </div>
+    <div class="box bg-primary">
+        <i class="fa-solid fa-phone fa-3x"></i>
+        <h3>TELEFON</h3>
+        <p>+420 721 598 669</p>
+    </div>
+    <div class="box">
+        <i class="fa-solid fa-envelope fa-3x"></i>
+        <h3>E-MAIL</h3>
+        <p>cukrarna.narohu@seznam.cz</p>
+    </div>
+</section>
+
+<div class="clr"></div>
+<footer id="main-footer" class="bg-dark">
+    <p>Cukrárna Na rohu &copy; 2022</p>
+</footer>
+</body>
+</html>
