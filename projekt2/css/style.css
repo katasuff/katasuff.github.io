@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #eee;
+    background: #333333;
     font-family: "Comfortaa", cursive;
 }
 
@@ -15,12 +15,15 @@ body {
 }
 
 .text-primary {
-    color: #93cb52;
+    color: lightcoral;
 }
 
-p {
+p, h3, h2, h1{
     margin: 0.75rem 0;
+    color: white;
 }
+
+/*NAVBAR*/
 
 #navbar {
     background: #333;
@@ -37,6 +40,7 @@ p {
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
+    text-align: center;
 }
 
 #navbar a {
@@ -51,11 +55,93 @@ p {
 
 
 #navbar ul li a:hover {
-    background-color: #93cb52;
-    border-radius: 1px;
+    background-color: lightcoral;
+    border-radius: 30%;
 }
 
+
+/*showcase*/
 #showcase {
-    background: #333 url("https://source.unsplash.com/random/?ecology") no-repeat center center/cover;
+    background: #333 url("https://images.unsplash.com/photo-1595144780677-6d0b5abbd089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80") no-repeat center center/cover;
     height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: lightcoral;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background: lightcoral;
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+/*Utility classes*/
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+/*section about*/
+#about .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#about .item {
+    text-align: center;
+    padding: 1rem;
+}
+
+#about .items .item i {
+    background: lightcoral;
+    padding: 1rem;
+    border-radius: 25%;
+    margin-bottom: 1rem;
 }
