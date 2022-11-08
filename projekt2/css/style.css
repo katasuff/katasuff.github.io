@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -54,11 +54,25 @@ p {
 
 #navbar ul li a:hover {
     background-color: lightcoral;
+    padding: 0.5rem 1rem;
     border-radius: 30%;
 }
 
 
 /*showcase*/
+.source {
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #aaa;
+    margin: 10px 20px;
+}
+
+.source a {
+
+}
+
 #showcase {
     background: #333 url("https://images.unsplash.com/photo-1595144780677-6d0b5abbd089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80") no-repeat center center/cover;
     height: 100vh;
@@ -73,13 +87,14 @@ p {
     align-items: center;
     height: 100%;
     padding: 0 2rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .l-heading {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 1.1;
+    letter-spacing: 0.5rem;
 }
 
 .lead {
@@ -91,23 +106,26 @@ p {
     display: inline-block;
     color: #fff;
     background: lightcoral;
-    padding: 0.5rem 2rem;
+    padding: 1rem 1rem;
     border: none;
     border-radius: 30px;
+    text-decoration: none;
 }
 
 .btn:hover {
-    background: lightcoral;
+    background: lightpink;
 }
 
 .btn-dark {
     background: #333;
-    color: #fff;
+    color: #ffffff;
 }
 
 /*Utility classes*/
 .py-1 {padding: 1.5rem 0;}
+
 .py-2 {padding: 2rem 0;}
+
 .py-3 {padding: 3rem 0;}
 
 .container {
@@ -116,6 +134,7 @@ p {
     padding: 0 2rem;
     overflow: hidden;
 }
+
 .text-center {
     text-align: center;
 }
