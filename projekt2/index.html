@@ -24,7 +24,7 @@
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">O nás</a></li>
-        <li><a href="#history">Naše historie</a></li>
+        <li><a href="#projekt">Otevírací doba</a></li>
         <li><a href="#contact">Kontakt</a></li>
     </ul>
 </nav>
@@ -68,6 +68,39 @@
         </div>
     </div>
 </section>
+
+<section id="projekt">
+    <div class="projekt-img">Něco zajímavého</div>
+    <div class="projekt-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Otevírací </span>doba</h2>
+        <p>Otevírací doba se může měnit! Změny najdete na našich webových stránkách.</p>
+        <ul class="list">
+            <li>pondělí - pátek: 10:00 - 17:00</li>
+            <li>sobota: 10:00 - 20:00</li>
+            <li>neděle: 14:00 - 16:00</li>
+        </ul>
+    </div>
+</section>
+
+<footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+        <p>Copyright &copy; Cukrárna Na rohu</p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 150) {
+            document.querySelector('#navbar').style.opacity = 0.9;
+        }
+        else {
+            document.querySelector('#navbar').style.opacity = 1;
+        }
+    })
+
+</script>
 
 </body>
 </html>
