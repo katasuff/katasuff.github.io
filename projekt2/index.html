@@ -14,6 +14,8 @@
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width: 1100px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
     <title>Cukrárna Na rohu</title>
 </head>
 
@@ -59,7 +61,7 @@
                 </div>
             </div>
             <div class="item">
-                <i class="fa-solid fa-person-half-dress fa-2x"></i>
+                <i class="fa-solid fa-children fa-2x"></i>
                 <div>
                     <h3>Skvělý kolektiv</h3>
                     <p>I ve chmurných dnech vás obslouží milá servírka s úsměvem na tváři.</p>
@@ -70,7 +72,7 @@
 </section>
 
 <section id="projekt">
-    <div class="projekt-img">Něco zajímavého</div>
+    <div class="projekt-img"></div>
     <div class="projekt-text bg-dark p-2">
         <h2 class="m-heading"><span class="text-primary">Otevírací </span>doba</h2>
         <p>Otevírací doba se může měnit! Změny najdete na našich webových stránkách.</p>
@@ -134,16 +136,16 @@
     </div>
     <div class="contact-adress bg-dark p-2">
         <h2 class="m-heading">Kontakt</h2>
-        <h3>Adresa cukrárny</h3>
+        <h3><span class="text-primary">Adresa cukrárny</span></h3>
         <ul class="list">
             <li>Jantarová 3344/4</li>
             <li>702 00, Ostrava</li>
         </ul>
-        <h3>Email</h3>
+        <h3><span class="text-primary">Email</span></h3>
         <ul class="list">
             <li>cukrarna.narohu@seznam.cz</li>
         </ul>
-        <h3>telefon</h3>
+        <h3><span class="text-primary">Telefon</span></h3>
         <ul class="list">
             <li>+420 721 598 669</li>
         </ul>
@@ -184,10 +186,8 @@
 
         if (cur_pos > 350) {
             document.querySelector('#navbar').style.opacity = 0.9;
-            document.querySelector('#showcase .source').style.display = "none";
         } else {
             document.querySelector('#navbar').style.opacity = 1;
-            document.querySelector('#showcase .source').style.display = "block";
         }
 
         // Navigation active state on scroll
