@@ -19,6 +19,23 @@
     #navbar {
         flex-direction: column;
         align-items: center;
+        align-items: stretch;
+    }
+
+    #navbar #hambac {
+        display: block;
+        text-align: center;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        display: none;
+    }
+
+    #navbar ul li {
+        padding: 0.5rem;
+        border-bottom: #f4f4f4 1px dotted;
     }
 
     #navbar #logo {

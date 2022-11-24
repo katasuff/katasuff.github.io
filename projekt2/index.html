@@ -23,6 +23,9 @@
 <nav id="navbar">
     <div id="logo"><span class="text-primary"><i class="fa-solid fa-cake-candles"></i></span><a> Cukrárna <span
             class="text-primary">Na rohu</span></a></div>
+
+    <a href="#" id="hambac"><i class="fa fa-bars fa-2x"></i></a>
+
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">O nás</a></li>
@@ -88,11 +91,21 @@
     <div class="container">
         <h2 class="m-heading text-center">Ilustrační <span class="text-primary">obrázky</span></h2>
         <div class="items py-1">
-            <div><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="cupcake"></div>
-            <div><img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="dort"></div>
-            <div><img src="https://images.unsplash.com/photo-1614145121029-83a9f7b68bf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="košíček"></div>
-            <div><img src="https://images.unsplash.com/photo-1580913387627-a33eb3d2f02d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="koláč"></div>
-            <div><img src="https://images.unsplash.com/photo-1612198790700-0ff08cb726e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="makronky"></div>
+            <div><img
+                    src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="cupcake"></div>
+            <div><img
+                    src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                    alt="dort"></div>
+            <div><img
+                    src="https://images.unsplash.com/photo-1614145121029-83a9f7b68bf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="košíček"></div>
+            <div><img
+                    src="https://images.unsplash.com/photo-1580913387627-a33eb3d2f02d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="koláč"></div>
+            <div><img
+                    src="https://images.unsplash.com/photo-1612198790700-0ff08cb726e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="makronky"></div>
         </div>
     </div>
 </section>
@@ -157,10 +170,19 @@
         <p>Copyright &copy; Cukrárna Na rohu</p>
     </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+    $('#navbar #hambac').click(function () {
+        $('#navbar ul').slideToggle("slow");
+    });
+
+    $('#navbar ul li a').click(function () {
+        $('#navbar ul').hide();
+    });
+
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
@@ -168,7 +190,7 @@
             const hash = this.hash;
             $('html, body').animate(
                 {
-                    scrollTop: $(hash).offset().top - 100
+                    scrollTop: $(hash).offset().top - 260
                 }, 800
             )
         }
@@ -184,9 +206,9 @@
         // Menu Opacity on scrolling and hidding source
 
         if (cur_pos > 350) {
-            document.querySelector('#navbar').style.opacity = 0.9;
+            //    document.querySelector('#navbar').style.opacity = 0.9;
         } else {
-            document.querySelector('#navbar').style.opacity = 1;
+            //    document.querySelector('#navbar').style.opacity = 1;
         }
 
         // Navigation active state on scroll
