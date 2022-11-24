@@ -38,6 +38,12 @@
         border-bottom: #f4f4f4 1px dotted;
     }
 
+    #navbar ul li:first-child {
+        padding: 0.5rem;
+        border-top: #f4f4f4 1px dotted;
+        margin-top: 0.8rem;
+    }
+
     #navbar #logo {
         margin-bottom: 1.3rem;
         text-align: center;
