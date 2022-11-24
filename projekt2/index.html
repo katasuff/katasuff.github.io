@@ -179,9 +179,13 @@
         $('#navbar ul').slideToggle("slow");
     });
 
-    $('#navbar ul li a').click(function () {
-        $('#navbar ul').hide();
-    });
+    console.log(window.innerWidth);
+
+    if ($(window).width() < 501) {
+        $('#navbar ul').click(function () {
+            $('#navbar ul').hide();
+        });
+    }
 
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
