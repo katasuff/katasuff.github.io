@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rozšířené vyhledávání</title>
+</head>
+<body>
+
+<section id="header">
+    <ul>
+        <li><a href="index.html">Zpět na vyhledávání</a></li>
+    </ul>
+</section>
+
+<div id="main">
+    <h2>Rozšířené vyhledávání</h2>
+    <form action="https://www.google.cz/search" method="get" class="search-bar2">
+        <div class="form">
+            <p>Všechna tato slova:</p>
+            <input type="text" name="words" autocomplete="off" autocapitalize="off" autocorrect="off">
+        </div>
+        <div class="form">
+            <p>Přesně tato slova nebo sousloví:</p>
+            <input type="word" name="email" autocomplete="off" autocapitalize="off" autocorrect="off">
+        </div>
+        <div class="form">
+            <p>Kterékoliv z těchto slov:</p>
+            <input name="some" autocomplete="off" autocapitalize="off" autocorrect="off">
+        </div>
+        <div class="form">
+            <p>Žádné z těchto slov:</p>
+            <input name="no" autocomplete="off" autocapitalize="off" autocorrect="off">
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Vyhledat" name="btnO">
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
