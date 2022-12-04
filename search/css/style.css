@@ -36,9 +36,9 @@ body {
 }
 
 #header ul li a {
+    font-size: 16px;
     color: #111;
     text-decoration: none;
-    font-size: 13px;
 }
 #header ul li a:hover {
     text-decoration: underline;
@@ -109,10 +109,27 @@ body {
     border: 1px solid #aaaaaa;
 }
 
-
-#main .search-bar2 .form p {
-    text-align-all: left;
+#main .button {
+    text-align: center;
 }
+
+#main .button input {
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background: #cccccc;
+}
+
+#main .button input:hover {
+    border: 1px solid #aaaaaa;
+}
+
+
+
 
 #main .search-bar2 .form {
     width: 100%;
