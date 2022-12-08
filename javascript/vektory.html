@@ -36,7 +36,7 @@
                 let delkav = (Math.sqrt((dx - cx) * (dx - cx) + (dy - cy) * (dy - cy))).toFixed(2);
                 let soucin = (bx - ax) * (dx - cx) + (by - ay) * (dy - cy);
                 let odchylka = soucin / delkau * delkav;
-                let odchylkastupne = Math.acos(odchylka);
+                let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
 
                 // výstup
                 document.querySelector('#delkau').innerHTML = `Délka vektoru u: ${delkau}`;
