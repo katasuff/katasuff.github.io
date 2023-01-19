@@ -13,7 +13,7 @@ body {
     width: 300px;
     height: 100%;
     border-right: solid;
-    border-color: darkblue;
+    border-color: darkmagenta;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
 }
 
 #navbar li {
-    color: darkblue;
+    color: magenta;
     border-top: 1px dotted;
     list-style: none;
     position: relative;
@@ -44,10 +44,15 @@ header {
 #navbar a {
     display: block;
     padding: 10px 30px;
-    color: gray;
+    color: darkgray;
     text-decoration: none;
     cursor: pointer;
 }
+
+#navbar a:hover {
+    color: black;
+}
+
 
 #main-doc {
     position: absolute;
@@ -75,13 +80,14 @@ code {
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
+    text-decoration-color: black;
     background-color: white;
     padding: 15px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 800px) {
     #navbar ul {
         border: 1px solid;
         height: 207px;
@@ -104,20 +110,5 @@ code {
         position: relative;
         margin-left: 0px;
         margin-top: 270px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #main-doc {
-        margin-left: -10px;
-    }
-
-    code {
-        margin-left: -20px;
-        width: 100%;
-        padding: 15px;
-        padding-left: 10px;
-        padding-right: 45px;
-        min-width: 233px;
     }
 }
