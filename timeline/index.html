@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>TimeLine</title>
+
+    <script>
+        const items = document.querySelectorAll("#timeline li");
+
+        const isInViewport = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        const run = () =>
+            items.forEach((item) => {
+                if (isInViewport(item)) {
+                    item.classList.add("show");
+                }
+            });
+
+        // Events
+        window.addEventListener("load", run);
+        window.addEventListener("resize", run);
+        window.addEventListener("scroll", run);
+    </script>
+</head>
+
+<body>
+<header id="main-header">
+    <div class="container">
+        <h1><i class="fas fa-calendar"></i> Kalendář</h1>
+        <h3><i class="fas fa-user"></i> Kateřina Suffnerová</h3>
+    </div>
+</header>
+
+<section id="timeline">
+    <ul>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-right"></i> 6. února 2023</h3>
+                <p>poslední den na odevzdání smluv k praxím</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-left"></i> 8. února 2023</h3>
+                <p>zabalit Vendě knížky</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-right"></i> 9. února 2023</h3>
+                <p>zajít na zásilkovnu a poslat Vendě balíček</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-left"></i> 10. února 2023</h3>
+                <p>zubař - 12:00</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-right"></i> 13. února 2023</h3>
+                <p>veterina- očkování - 15:30</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-left"></i> 20. února 2023</h3>
+                <p>udělat prezentaci do AJ</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-right"></i> 1. března 2023</h3>
+                <p>oční - 13:00</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-left"></i> 2. března 2023</h3>
+                <p>vyjde nová řada seriálu</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-right"></i> 6. března 2023</h3>
+                <p>vrátít knížku Lence</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fas fa-chevron-left"></i> 18. března 2023</h3>
+                <p>nezapomenout objednat dárek pro Honzu</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+</body>
+</html>
