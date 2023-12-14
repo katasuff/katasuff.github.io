@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakty - Pekárna Jinak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <ul>
+            <li class="logo"><img src="obrazky/logob.png" alt="logo"></li>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="about.html">O nás</a></li>
+            <li><a href="gallery.html">Fotogalerie</a></li>
+            <li><a href="offers.html">Nabídka</a></li>
+            <li><a href="contacts.html">Kontakty</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="contacts">
+    <div class="cont">
+        <div class="items">
+            <div class="item">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Adresa</h3>
+                <p>Jantarová 3344/4</p>
+                <p>702 00, Ostrava 2</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-phone fa-3x"></i>
+                <h3>Telefon</h3>
+                <p>Pekárna - 123 456 789</p>
+                <p>Manažerka - 987 654 321</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-envelope fa-3x"></i>
+                <h3>E-mail</h3>
+                <p>pekarna.jinak@seznam.cz</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-form">
+        <h2><span class="text-primary">Napište nám</span></h2>
+        <p>Prosíme o vyplnění níže uvedeného formuláře.</p>
+        <form>
+            <label for="name">Jméno</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+
+            <label for="message">Zpráva</label>
+            <textarea name="message" id="message"></textarea>
+            <button type="submit" class="btn">odeslat</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Pekárna. Všechna práva vyhrazena.</p>
+</footer>
+</body>
+</html>

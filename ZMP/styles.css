@@ -1,0 +1,323 @@
+/* Obecné styly */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: large
+}
+
+.text-primary {
+    color: lightcoral;
+}
+
+.text-primary2 {
+    color: indianred;
+}
+
+.btn {
+    color: #fff;
+    background: lightcoral;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: large;
+    width: 13rem;
+    height: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    color: #333333;
+}
+
+
+/* NAVBAR */
+.logo img {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+}
+
+
+#navbar ul li a:hover {
+    background-color: lightcoral;
+    padding: 0.5rem 1rem;
+    border-radius: 30%;
+}
+
+
+/* INDEX */
+#main {
+    background: url("obrazky/img2.png");
+    height: 50rem;
+    color: #fff;
+}
+
+#main .nadpisy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hlnadpis {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    letter-spacing: 0.5rem;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
+
+#info {
+    display: flex;
+}
+
+#info .opening-hours {
+    background-color: #f4f4f4;
+    color: #333333;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 4rem 6rem;
+}
+
+#info .opening-hours h2 {
+    padding-bottom: 2rem;
+}
+
+#info .opening-hours p {
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+#info .text {
+    background-color: #f4f4f4;
+    color: #333333;
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 6rem;
+}
+
+#info .text p, h2 {
+    padding-bottom: 2rem;
+}
+
+/* ABOUT */ /* IKONY */
+#aboutall {
+    background-color: #333333;
+}
+
+#about {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding-bottom: 2rem;
+}
+
+#about h2 {
+    text-align: center;
+    padding: 6rem 0 10px 0;
+}
+
+#about h3 {
+    padding-bottom: 10px;
+}
+
+#about .items {
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+}
+
+#about .item {
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+#about .items .item i {
+    color: #333333;
+    background: lightcoral;
+    padding: 1rem;
+    border-radius: 25%;
+    margin-bottom: 1rem;
+}
+
+
+/* INFORMACE */
+#about-info {
+    display: flex;
+}
+
+#about-info h1 {
+    padding: 10px 0;
+}
+
+#about-info p {
+    padding: 10px 0 10px 15px;
+}
+
+#about-info .info-img {
+    float: right;
+    width: 50%;
+    margin: auto;
+}
+
+#about-info .info-text {
+    float: left;
+    width: 50%;
+    color: #f4f4f4;
+    padding: 3rem 1rem 1rem 5rem;
+}
+
+#about-info .info-img img {
+    display: block;
+    width: 70%;
+    border-radius: 20%;
+}
+
+
+/* FOTOGALERIE */
+#images {
+    padding-top: 6rem;
+    align-items: center;
+    text-align: center;
+}
+
+#images .items {
+    display: flex;
+    padding: 1rem 0;
+}
+
+#images .items img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+
+/* KONTAKTY */
+#contacts {
+    background-color: #333333;
+}
+
+#contacts .cont {
+    padding-top: 5rem;
+    background-color: #f4f4f4;
+}
+
+#contacts .items {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#contacts .item {
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+}
+
+#contacts .items .item i {
+    color: #333333;
+    background: lightcoral;
+    padding: 1rem;
+    border-radius: 25%;
+    margin-bottom: 1rem;
+}
+
+/* FORM */
+#contact-form {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    background-color: #333333;
+    color: #f4f4f4;
+    padding: 2rem;
+    margin: auto;
+}
+
+#contacts h2 {
+    text-align: center;
+    padding: 1rem 0 10px 0;
+}
+
+#contact-form label {
+    display: block;
+    padding: 10px 0 5px 0;
+    font-size: large;
+}
+
+
+#contact-form input,
+#contact-form textarea {
+    background-color: #333333;
+    color: #f4f4f4;
+    width: 100%;
+    padding: 10px;
+    border: 1px lightcoral solid;
+    border-radius: 2rem;
+
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+
+
+/* ZÁHLAVÍ */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+
