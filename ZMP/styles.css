@@ -56,10 +56,12 @@ p {
     position: fixed;
     width: 100%;
     height: 5rem;
+    display: flex;
 }
 
 #navbar ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     align-items: center;
 }
@@ -154,7 +156,6 @@ p {
 #about {
     background-color: #f4f4f4;
     color: #333333;
-    padding-bottom: 2rem;
 }
 
 #about h2 {
@@ -190,6 +191,8 @@ p {
 /* INFORMACE */
 #about-info {
     display: flex;
+    background-color: #333333;
+    color: #f4f4f4;
 }
 
 #about-info h1 {
@@ -200,12 +203,6 @@ p {
     padding: 10px 0 10px 15px;
 }
 
-#about-info .info-img {
-    float: right;
-    width: 50%;
-    margin: auto;
-}
-
 #about-info .info-text {
     float: left;
     width: 50%;
@@ -213,11 +210,12 @@ p {
     padding: 3rem 1rem 1rem 5rem;
 }
 
-#about-info .info-img img {
-    display: block;
-    width: 70%;
-    border-radius: 20%;
+#about-info .video {
+    float: right;
+    width: 50%;
+    margin: auto;
 }
+
 
 
 /* FOTOGALERIE */
@@ -250,20 +248,20 @@ p {
     background-color: #f4f4f4;
 }
 
-#contacts .items {
+#contacts .cont .items {
     align-items: center;
     display: flex;
     width: 80%;
     margin: auto;
 }
 
-#contacts .item {
+#contacts .cont .item {
     text-align: center;
     padding: 2rem;
     flex: 1;
 }
 
-#contacts .items .item i {
+#contacts .cont .items .item i {
     color: #333333;
     background: lightcoral;
     padding: 1rem;
@@ -321,3 +319,132 @@ footer {
 }
 
 
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: xx-large
+    }
+
+    h2 {
+        font-size: x-large
+    }
+
+    h3 {
+        font-size: large
+    }
+
+    p {
+        font-size: medium
+    }
+
+    /* NAVBAR */
+    #navbar {
+        padding: 10px;
+    }
+
+    #navbar ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        padding-bottom: 5px;
+    }
+
+    #navbar ul li a {
+        font-size: small;
+        padding: 5px;
+        text-align: left;
+    }
+
+    /* HLAVNÍ STRÁNKA */
+    #main {
+        height: 40rem;
+    }
+
+    .hlnadpis {
+        font-size: xx-large;
+    }
+
+    #main .nadpisy p {
+        padding-bottom: 10px;
+    }
+
+    #info {
+        flex-direction: column;
+    }
+
+    #info .opening-hours {
+        width: 100%;
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    #info .text {
+        width: 100%;
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    #info .text p {
+        padding-bottom: 10px;
+    }
+
+    #info .opening-hours p {
+        font-size: medium;
+    }
+
+    /* O NÁS */
+    #about .items {
+        display: block;
+        width: 90%;
+    }
+
+    #about .items .item {
+        display: flex;
+        text-align: left;
+    }
+
+    #about .items .item i {
+        align-self: center;
+        margin-right: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    #about-info {
+        flex-direction: column;
+    }
+
+    #about-info .info-text {
+        width: 100%;
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    #about-info p {
+        text-align: left;
+    }
+
+    #about-info .video {
+        width: 100%;
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    /* KONTAKTY */
+    #contacts .cont .items {
+        display: block;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    #contacts .cont .items .item {
+        display: flex;
+        text-align: left;
+        padding: 0.5rem;
+    }
+
+    #contacts .cont .items .item i {
+        align-self: center;
+        margin-right: 1.3rem;
+    }
+
+    #contact-form {
+        width: 90%;
+    }
+}

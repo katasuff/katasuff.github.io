@@ -2,21 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>O nás - Pekárna Jinak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pekárna Jinak</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
 </head>
+
 <body>
 <header>
     <nav id="navbar">
         <ul>
             <li class="logo"><img src="obrazky/logob.png" alt="logo"></li>
+        </ul>
+        <ul>
             <li><a href="index.html">Domů</a></li>
             <li><a href="about.html">O nás</a></li>
             <li><a href="gallery.html">Fotogalerie</a></li>
+        </ul>
+        <ul>
             <li><a href="offers.html">Nabídka</a></li>
             <li><a href="contacts.html">Kontakty</a></li>
         </ul>
@@ -28,48 +35,58 @@
         <h2>Něco<span class="text-primary"> o nás</span></h2>
         <div class="items">
             <div class="item">
-                <i class="fas fa-hotel fa-3x"></i>
-                <h3>Skvělé umístění</h3>
-                <p>Pekárna je umístěna v centru města v obchodním domě Světluška, přímo u vchodu.</p>
+                <i class="fas fa-hotel fa-2x"></i>
+                <div>
+                    <h3>Skvělé umístění</h3>
+                    <p>Pekárna je umístěna v centru města v obchodním domě Světluška, přímo u vchodu.</p>
+                </div>
             </div>
             <div class="item">
-                <i class="fa-solid fa-basket-shopping fa-3x"></i>
-                <h3>Telefonická objednávka</h3>
-                <p>Nemusíte čekat, stačí zavolat. My vám objednávku připravíme a vy si ji pouze přijdete vyzvednout.</p>
+                <i class="fa-solid fa-basket-shopping fa-2x"></i>
+                <div>
+                    <h3>Telefonická objednávka</h3>
+                    <p>Nemusíte čekat, stačí zavolat. My vám objednávku připravíme a vy si ji pouze přijdete
+                        vyzvednout.</p>
+                </div>
             </div>
             <div class="item">
-                <i class="fa-solid fa-person-half-dress fa-3x"></i>
-                <h3>Skvělý kolektiv</h3>
-                <p>Vždy vás obslouží milá servírka s úsměvem na tváři, která vám zlepší den</p>
+                <i class="fa-solid fa-children fa-2x"></i>
+                <div>
+                    <h3>Skvělý kolektiv</h3>
+                    <p>Vždy vás obslouží milá servírka s úsměvem na tváři, která vám zlepší den</p>
+                </div>
             </div>
+        </div>
+
+        <div id="about-info">
+            <div class="info-text">
+                <h1>Naše <span class="text-primary">historie</span></h1>
+                <p><span class="text-primary2">Pečeme pro vás už od roku 1973</span></p>
+                <p>Naše pekárna se zrodila z vášně pro pečení a lásky k tradici. Před padesáti lety začaly naše
+                    rodinné kořeny pokládat základy naší pekárny. První chutné recepty a vůně čerstvě upečeného pečiva
+                    oživily podnikání sester, které se spojily ve společné vášni pro vytváření lahodného pečiva.
+                    Srdcem naší pekárny jsou tradiční recepty spojené s inovativními nápady, které přinášejí
+                    neodolatelné
+                    pochoutky pro naše zákazníky.</p>
+                <p><span class="text-primary2">Tradiční receptury, ruční výroba a kvalitní ingredience</span></p>
+                <p>Naše tajemství spočívá v tradičních receptech, pečlivé ruční výrobě a výběru těch nejlepších
+                    ingrediencí.
+                    Každý kousek pečiva je vytvořen s péčí a láskou, abychom vám přinesli nejlepší chuť a kvalitu,
+                    kterou si
+                    zasloužíte. Důvěřujeme tradici, věříme v ruční práci a pečujeme o kvalitu každého detailu, abychom
+                    vám
+                    přinesly dokonalý zážitek při každém soustu.</p>
+            </div>
+
+            <video class="video" width="640" height="360" controls>
+                <source src="/video/reklamni_video.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje přehrání tohoto videa.
+            </video>
         </div>
     </div>
 
-    <div id="about-info">
-        <div class="info-text">
-            <h1>Naše <span class="text-primary">historie</span></h1>
-            <span class="text-primary2"><p>Pečeme pro vás už od roku 2003</p></span>
-            <p>Naše pekárna se zrodila z vášně pro pečení a lásky k tradici. Před dvaceti lety začali naše
-                rodinné kořeny zakládat základy naší pekárny. První chutné recepty a vůně čerstvě upečeného pečiva
-                oživily podnikání sourozenců, kteří se spojili ve společné vášni pro vytváření lahodného pečiva.
-                Srdcem naší pekárny jsou tradiční recepty spojené s inovativními nápady, které přinášejí neodolatelné
-                pochoutky pro naše zákazníky.</p>
-            <span class="text-primary2"><p>Tradiční receptury, ruční výroba a kvalitní ingredience</p></span>
-            <p>Naše tajemství spočívá v tradičních receptech, pečlivé ruční výrobě a výběru těch nejlepších ingrediencí.
-                Každý kousek pečiva je vytvořen s péčí a láskou, abychom vám přinesli nejlepší chuť a kvalitu, kterou si
-                zasloužíte. Důvěřujeme tradici, věříme v ruční práci a pečujeme o kvalitu každého detailu, abychom vám
-                přinesli dokonalý zážitek při každém soustu.</p>
-        </div>
-        <div class="info-img">
-            <img src="obrazky/logob.png"
-                 alt="reklamní video">
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    <p>&copy; 2023 Pekárna. Všechna práva vyhrazena.</p>
-</footer>
+    <footer>
+        <p>&copy; 2023 Pekárna. Všechna práva vyhrazena.</p>
+    </footer>
 </body>
 </html>
