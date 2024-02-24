@@ -1,0 +1,33 @@
+* {
+    font-family: "Comfortaa", cursive;
+    background-color: white;
+}
+
+#contacts {
+    background-color: #333333;
+}
+
+#contacts .cont {
+    padding-top: 5rem;
+}
+
+#contacts .items {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#contacts .item {
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+}
+
+#contacts .items .item i {
+    color: #f4f4f4;
+    background: #333333;
+    padding: 1rem;
+    border-radius: 25%;
+    margin-bottom: 1rem;
+}
