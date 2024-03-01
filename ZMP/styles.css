@@ -36,6 +36,7 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .btn:hover {
@@ -270,7 +271,7 @@ p {
 
 /* FORM */
 #contact-form {
-    width: 60%;
+    width: 70%;
     align-items: center;
     text-align: center;
     background-color: #333333;
@@ -282,6 +283,21 @@ p {
 #contacts h2 {
     text-align: center;
     padding: 1rem 0 10px 0;
+}
+
+#contact-form img {
+    height: 30rem;
+    margin: 1rem;
+}
+
+#contact-form .sekce {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-form form {
+    width: 100%;
 }
 
 #contact-form label {
